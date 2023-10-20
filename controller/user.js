@@ -150,7 +150,7 @@ exports.forgotPassword = async (req, res) => {
   const newPasswordResetToken = new ResetPasswordToken({ owner: user._id, token })
   await newPasswordResetToken.save()
 
-  const resetPasswordUrl = `http://localhost:3000/auth/resetpassword?token=${token}&id=${user._id}`
+  const resetPasswordUrl = `https://fivestarreviewapp.netlify.app/auth/resetpassword?token=${token}&id=${user._id}`
 
   var transport = generateMailTransporter()
 
