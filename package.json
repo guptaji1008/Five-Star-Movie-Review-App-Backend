@@ -23,5 +23,9 @@
     "mongoose": "^7.5.3",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.5"
+  },
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
   }
 }

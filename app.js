@@ -7,6 +7,7 @@ const movieRouter = require('./route/movies')
 const reviewRouter = require('./route/review')
 const adminRouter = require('./route/admin')
 const cors = require('cors')
+const port = preocess.env.PORT || 8000
 require('./db/conn')
 const {handleError} = require('./middleware/error')
 const { handleNotFound } = require('./utils/helper')
@@ -25,5 +26,5 @@ app.use('/*', handleNotFound)
 app.use(handleError)
 
 app.listen(8000, () => {
-    console.log("Listening to port no. " + 8000)
+    console.log("Listening to port no. " + port)
 })
