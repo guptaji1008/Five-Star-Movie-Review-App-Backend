@@ -7,7 +7,7 @@ const movieRouter = require('./route/movies')
 const reviewRouter = require('./route/review')
 const adminRouter = require('./route/admin')
 const cors = require('cors')
-const port = preocess.env.PORT || 8000
+const port = process.env.PORT || 8000
 require('./db/conn')
 const {handleError} = require('./middleware/error')
 const { handleNotFound } = require('./utils/helper')
